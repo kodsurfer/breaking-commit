@@ -10,5 +10,9 @@ def find_break(n, is_broken):
       ri = mi
   return le
 
-def is_broken():
-  pass
+def is_broken(commit_number):
+  return commit_number == 5
+
+n = 10
+res = find_break(n, is_broken)
+print(f"first breaking commit: {res}")
